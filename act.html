@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акт приёмки оборудования в ремонт</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 20mm;
+            color: #000;
+        }
+        h1, h2 {
+            text-align: center;
+            font-size: 16pt;
+            text-transform: uppercase;
+        }
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+            height: 24px;
+
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .text-section {
+            margin-bottom: 15px;
+        }
+        .signature-block {
+            margin-top: 50px;
+        }
+        .signature-block .column {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .signature-block .column:last-child {
+            margin-left: 10%;
+        }
+        .signature-line {
+            border-bottom: 1px solid #000;
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    margin-left: 10px;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 10mm;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Акт приёма-передачи оборудования на диагностику и в ремонт</h1>
+        <p>№ ___________ от «____»________________ 20___ г.</p>
+    </div>
+
+    <div class="text-section">
+        <p>Исполнитель: <strong>Мастерская «Ремонт-Ноутбуков»</strong></p>
+        <p>Адрес: ____________________________________________________________________</p>
+        <p>Телефон: _________________________________</p>
+    </div>
+
+    <div class="text-section">
+        <h2>Информация о Заказчике</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 30%;">Ф.И.О. / Наименование организации</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Контактный телефон</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Адрес электронной почты</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="text-section">
+        <h2>Информация об оборудовании</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 30%;">Тип устройства</td>
+                    <td>Ноутбук</td>
+                </tr>
+                <tr>
+                    <td>Производитель, модель</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Серийный номер</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Комплектность (зарядное устройство, сумка и т.д.)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Внешнее состояние (дефекты, царапины, вмятины)</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-section">
+        <h2>Описание неисправности со слов Заказчика</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-section">
+        <h2>Условия ремонта</h2>
+        <p>1. Исполнитель обязуется провести диагностику в срок до ____ рабочих дней. Срок и стоимость ремонта будут сообщены Заказчику после диагностики.</p>
+        <p>2. Заказчик согласен с тем, что Исполнитель не несёт ответственности за возможную потерю данных в процессе диагностики или ремонта. Рекомендуется создать резервную копию данных до передачи устройства.</p>
+        <p>3. В случае отказа Заказчика от ремонта после проведения диагностики, оплачивается стоимость диагностики в размере _________ руб.</p>
+        <p>4. В случае обнаружения скрытых дефектов, следов залития, механических повреждений, претензии по внутренним повреждениям не принимаются.</p>
+    </div>
+
+    <div class="signature-block">
+        <div class="column">
+            <p><strong>Заказчик:</strong></p>
+            <p>Ф.И.О.: <span class="signature-line"></span></p>
+            <p>Подпись: <span class="signature-line"></span></p>
+        </div>
+        <div class="column">
+            <p><strong>Исполнитель:</strong></p>
+            <p>Ф.И.О. / Должность: <span class="signature-line"></span></p>
+            <p>Подпись: <span class="signature-line"></span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Акт составлен в двух экземплярах, имеющих одинаковую юридическую силу: по одному для каждой из Сторон.</p>
+    </div>
+
+    <!-- Пример кнопки для печати (скрыта при печати) -->
+    <button class="no-print" onclick="window.print()">Распечатать</button>
+
+</body>
+</html>
