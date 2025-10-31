@@ -1,7 +1,6 @@
 {
     "type": "opiumdb-access",
     "list": [
-        {"balashov_nikita": true},
-        {"romanovka_pavel": false}
+        {"balashov": true}
     ]
 }
