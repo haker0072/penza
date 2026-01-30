@@ -1,7 +1,8 @@
 {
-    type: "opiumdb-access",
-    list: {
-        balashov: true,
-        off: false
+    "type": "opiumdb-access",
+    "list": {
+        "balashov": true,
+        "off": false
     }
 }
+
