@@ -1,10 +1,7 @@
 {
     "type": "opiumdb-access",
-    "list": [
-        {"balashov": true},
-        {"disable": false}
-    ]
+    "list":{
+        "balashov": true,
+        "off": false
+    }
 }
-
-
-
